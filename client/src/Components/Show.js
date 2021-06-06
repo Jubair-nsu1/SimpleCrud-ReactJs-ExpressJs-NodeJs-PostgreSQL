@@ -51,13 +51,10 @@ const Show = () => {
             <tr key={todo.todo_id}>
               <td>{todo.description}</td>
               <td>
-                <Update todo={todo} />
+                <Update todo={todo}/>
               </td>
               <td>
-                <button
-                  className="btn btn-danger"
-                  onClick={() => deleteTodo(todo.todo_id)}
-                >
+                <button className="btn btn-danger" onClick={() => deleteTodo(todo.todo_id)}>
                   Delete
                 </button>
               </td>
