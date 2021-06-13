@@ -5,13 +5,18 @@ A simple application is created to perform CRUD(Create, Read, Update, Delete) op
 
 ------------------------------
 
-> Frontend: React Js, Exress Js 
+> Frontend: React Js, Express Js 
 
 > Backend: Node Js & PostgreSQL
 
 -----------------------------
 
 ## Screen Interface
+
+<p align="center">
+<img src="interface.jpg" height="400">
+</p>
+
 
 </br>
 
