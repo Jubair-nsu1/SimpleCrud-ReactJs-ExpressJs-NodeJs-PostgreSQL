@@ -17,15 +17,15 @@ const Input = ()  => {
         } catch (err) {
           console.error(err.message);
         }
-      };
+    };
 
     return(
        <Fragment>
-           <h1 className="text-center mt-5">React Crud Operation</h1>
-       <form className="d-flex mt-5" onSubmit={onSubmitForm}> 
-           <input type="text" className="form-control" value={description} onChange={e => setDescription(e.target.value)}/>
-           <button className="btn btn-success">Add</button>
-       </form>
+         <h1 className="text-center mt-5 color-blue">React Crud Operation</h1>
+         <form className="text-center mt-5" onSubmit={onSubmitForm}> 
+           <input type="text" className="form-control" value={description} onChange={e => setDescription(e.target.value)}/>           
+           <button className="btn btn-primary mt-2">Add Description</button>
+         </form>
        </Fragment> 
     ); 
 };
