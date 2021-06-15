@@ -38,28 +38,28 @@ const Show = () => {
   return (
     <Fragment>
       {" "}
-      
+      <div className="list-group width='200'">
       <table className="table mt-5 table-hover table-dark">
         
         <thead >
           <tr className="bg-primary">
-            <th scope="col">Description</th>
-            <th scope="col">Edit</th>
-            <th scope="col">Delete</th>
+            <th >Description</th>
+            <th >Edit</th>
+            <th >Delete</th>
           </tr>
         </thead>
         
         <tbody>
           {todos.map(todo => (
             <tr key={todo.todo_id}>
-              <td>{todo.description}</td>
+              <td >{todo.description}</td>
               <td><Update todo={todo}/></td>
               <td><button className="btn btn-danger" onClick={() => deleteTodo(todo.todo_id)}>Delete</button></td>
             </tr>
           ))}
-        </tbody>
-      
+        </tbody>      
       </table>
+      </div>
     </Fragment>
   );
 };
